@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title>
+<link rel="stylesheet" href="C:\Users\rjp18\expense-tracker\public\styles.css">
+</head>
+<body>
+  <h2>Welcome, <%= username %></h2>
+  <form method="POST" action="/add-expense">
+    <input type="date" name="date" required />
+    <input type="number" name="amount" placeholder="Amount" required />
+    <input type="text" name="category" placeholder="Category" required />
+    <input type="text" name="description" placeholder="Description" required />
+    <button type="submit">Add Expense</button>
+  </form>
+</body>
+</html>
